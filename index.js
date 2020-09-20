@@ -65,7 +65,7 @@ class Complex {
 		return a.sub(b);
 	}
 	
-	cbrt() { // Returns the square root of a complex number
+	cbrt() { // Returns the cube root of a complex number
 		return this.log().div(3,0).exp();
 	}
 	
@@ -131,7 +131,7 @@ class Complex {
 		});
 	}
 	
-	log10() { // Returns the log base 2 of a complex number
+	log10() { // Returns the log base 10 of a complex number
 		return this.log().div(new Complex(10,0).log());
 	}
 	
@@ -189,7 +189,7 @@ class Complex {
 		return this.log().div(2,0).exp();
 	}
 	
-	sub(...number) { // Subtract 2 complex numbers
+	sub(...number) { // Subtracts 2 complex numbers
 		number = this.makeObject(number);
 		return new Complex({
 			re: this.re - number.re,
