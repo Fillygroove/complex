@@ -51,3 +51,9 @@ let number = new Complex(0,Math.PI);
 let newNumber = number.exp(); // Returns a new complex number that has the value -1+0i, 
 // although slightly innacurate due to weirdness with javascript rounding
 ```
+If you just want the individual real and imaginary parts of a complex number, that's easy to do as well
+```js
+let number = new Complex(1,2);
+let real = number.re; // 1
+let imag = number.im; // 2
+```
